@@ -384,8 +384,6 @@ int error;
 	default : return("unknown socket error");
 	}
 }
-#else
-static void res_init() {}
 #endif
 
 /* holler :
@@ -405,7 +403,7 @@ void holler (str, p1, p2, p3, p4, p5, p6)
       if (h_errno > 4)		/* oh no you don't, either */
 	fprintf (o_holler_out, "preposterous h_errno: %d", h_errno);
       else
-	fprintf (o_holler_out, h_errs[h_errno]);	/* handle it here */
+	fprintf (o_holler_out, "%s", h_errs[h_errno]);	/* handle it here */
       h_errno = 0;				/* and reset for next call */
     }
 #endif
