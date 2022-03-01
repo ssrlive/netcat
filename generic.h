@@ -99,7 +99,9 @@
 #define HAVE_PATHS_H
 
 /* some SV-flavors break select stuff out separately */
+#ifndef _MSC_VER
 #define HAVE_SELECT_H
+#endif
 
 /* some put time() in here rather than sys/time.h */
 #define HAVE_TIME_H

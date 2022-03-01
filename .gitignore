@@ -1,3 +1,15 @@
+build/
+x64/
+Debug/
+Release/
+ipch/
+.vs/
+cmake-build-*/
+.vscode/
+
+*.sdf
+*.suo
+*.vcxproj.user
 *.o
 core
 
