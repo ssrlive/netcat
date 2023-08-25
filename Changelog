@@ -107,3 +107,5 @@ Here is sort of an edit history for netcat, in forward cron order.
 	random final cleanups and doc updates ... pant pant ...
 960320	-- 1.10
 	RELEASE version tested everywhere I could get to, up for FTP
+960330  -- 1.11
+        Windows support.
